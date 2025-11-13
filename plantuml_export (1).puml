@@ -1,0 +1,126 @@
+@startuml Aplicativo de Gestão Escolar
+
+' ============================
+' CLASSES PRINCIPAIS
+' ============================
+
+class Area {
+    -id: Integer
+    -nome: Char
+    -descricao: Text
+    -coordenador: Char
+    +toString()
+}
+
+class Curso {
+    -id: Integer
+    -nome: Char
+    -descricao: Text
+    -carga_horaria_total: Integer
+    -nivel: Char
+    -area: Area
+    +toString()
+}
+
+class Professor {
+    -id: Integer
+    -nome_completo: Char
+    -matricula_funcional: Char
+    -data_contratacao: Date
+    -email: Char
+    -valor_hora: Decimal
+    +toString()
+}
+
+class Disciplina {
+    -id: Integer
+    -codigo: Char
+    -nome: Char
+    -descricao: Text
+    -carga_horaria: Integer
+    -area: Area
+    +toString()
+}
+
+class Campus {
+    -id: Integer
+    -nome: Char
+    -endereco: Text
+    -cidade: Char
+    -uf: Char
+    +toString()
+}
+
+class Sala {
+    -id: Integer
+    -numero_sala: Char
+    -predio: Char
+    -tipo: Char
+    -quantidade_lugares: Integer
+    +toString()
+}
+
+class Turma {
+    -id: Integer
+    -nome: Char
+    -capacidade: Integer
+    -data_inicio: Date
+    -data_fim: Date
+    -status: Char
+    -professor: Professor
+    -disciplina: Disciplina
+    -curso: Curso
+    -campus: Campus
+    -sala: Sala
+    +toString()
+}
+
+class Aluno {
+    -id: Integer
+    -nome_completo: Char
+    -cpf: Char
+    -data_nascimento: Date
+    -email: Char
+    -telefone: Char
+    -ativo: Boolean
+    +toString()
+}
+
+class Matricula {
+    -id: Integer
+    -data_matricula: DateTime
+    -status: Char
+    -nota1: Decimal
+    -nota2: Decimal
+    -nota_final: Decimal
+    -media_final: Decimal
+    -frequencia: Decimal
+    -aluno: Aluno
+    -turma: Turma
+    +toString()
+}
+
+' ============================
+' RELACIONAMENTOS
+' ============================
+
+
+' N:N entre Área e Curso
+Area  "N" *--> "N" Curso 
+
+' N:N entre Área e Disciplina
+Area "N" *--> "N" Disciplina 
+
+' 1:N entre Campus e Turma
+Campus "1" *--> "N" Turma 
+
+' 1:N entre Sala e Turma
+Sala "1" *--> "N" Turma
+
+' 1:N relacionamentos principais
+Curso "1" *--> "N" Turma 
+Professor "1" *--> "N" Turma 
+Disciplina "1" *--> "N" Turma 
+Aluno "1" *--> "N" Matricula 
+Turma "1" *--> "N" Matricula 
+@enduml

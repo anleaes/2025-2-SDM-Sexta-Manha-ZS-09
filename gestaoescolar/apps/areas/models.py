@@ -10,5 +10,5 @@ class Area(models.Model):
         verbose_name_plural = 'Áreas'
         ordering = ['id']
 
-    def __str__(self):
+    def __str__(self):sczdczd
         return self.nome

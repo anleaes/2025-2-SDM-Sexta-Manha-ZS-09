@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'campus.apps.CampusConfig',
     'salas.apps.SalasConfig',
     'turmas.apps.TurmasConfig',
+    'alunos.apps.AlunosConfig',
+
 
 
 

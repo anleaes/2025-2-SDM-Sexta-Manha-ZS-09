@@ -6,3 +6,7 @@
 /apps/disciplinas/migrations/*
 /apps/professores/__pycache__/*
 /apps/professores/migrations/*
+/apps/campus/__pycache__/*
+/apps/campus/migrations/*
+/apps/salas/__pycache__/*
+/apps/salas/migrations/*

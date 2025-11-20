@@ -1,2 +1,6 @@
 /apps/areas/__pycache__/*
 /apps/areas/migrations/*
+/apps/curso/__pycache__/*
+/apps/curso/migrations/*
+/apps/disciplinas/__pycache__/*
+/apps/disciplinas/migrations/*

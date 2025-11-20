@@ -4,3 +4,5 @@
 /apps/curso/migrations/*
 /apps/disciplinas/__pycache__/*
 /apps/disciplinas/migrations/*
+/apps/professores/__pycache__/*
+/apps/professores/migrations/*

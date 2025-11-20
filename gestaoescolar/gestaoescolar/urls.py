@@ -28,6 +28,7 @@ urlpatterns = [
     path('salas/', include('salas.urls', namespace='salas')),
     path('turmas/', include('turmas.urls', namespace='turmas')),
     path('alunos/', include('alunos.urls', namespace='alunos')),
+    path('matriculas/', include('matriculas.urls', namespace='matriculas')),
 
 
 ]

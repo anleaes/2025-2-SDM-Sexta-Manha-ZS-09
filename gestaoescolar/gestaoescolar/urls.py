@@ -25,6 +25,7 @@ urlpatterns = [
     path('disciplina/', include('disciplinas.urls', namespace='disciplinas')),
     path('professores/', include('professores.urls', namespace='professores')),
     path('campus/', include('campus.urls', namespace='campus')),
+    path('salas/', include('salas.urls', namespace='salas')),
 
 
 ]

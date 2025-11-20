@@ -10,3 +10,7 @@
 /apps/campus/migrations/*
 /apps/salas/__pycache__/*
 /apps/salas/migrations/*
+/apps/turmas/__pycache__/*
+/apps/turmas/migrations/*
+/apps/alunos/__pycache__/*
+/apps/alunos/migrations/*

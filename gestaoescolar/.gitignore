@@ -14,3 +14,5 @@
 /apps/turmas/migrations/*
 /apps/alunos/__pycache__/*
 /apps/alunos/migrations/*
+/apps/matriculas/__pycache__/*
+/apps/matriculas/migrations/*

@@ -1,0 +1,2 @@
+GET http://localhost:8000/alunos
+Authorization: 6cec5c0279d6901bed9b47d757df14b062525f25

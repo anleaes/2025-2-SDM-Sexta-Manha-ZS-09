@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'turmas.apps.TurmasConfig',
     'alunos.apps.AlunosConfig',
     'matriculas.apps.MatriculasConfig',
+    'rest_framework.authtoken'
 
 
 
